@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #EAC926;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+
+main {
+    width: 100%;
+    margin: auto;
+    background-color: #ebebeb;
+}
+
+section {
+    width: 70%;
+    margin: auto;
+}
+
+img {
+    width: 100%;
+}
+
+h2 {
+    font-size: 24px;
+    text-align: center;
+}
+
+i {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+footer {
+    width: 90%;
+    margin: auto;
+    background-color: #ebebeb;
+    color: #666;
+}
+
+form {
+    padding: 20px 10px;
+    width: 100vw;
+    margin: auto;
+    text-align: center;
+}
+
+form div.field {
+    text-align: left;
+    padding: 10px;
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+    border: thin 
+}
+
+form div.field-button{
+    display: flex;
+    flex-direction: column;
+}
+
+.action-button {
+    color: #fff;
+    background-color: #1259c3;
+    padding: 5px;
+    border-radius: 5px;
+}
+.action-button a{
+    text-decoration: none;
+    color: white;
+}
+main section article i {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #fff;
+    border-radius: 50%;
+    /* position: absolute;*/
+    right: 20px;
+    top: -15px;
+}
+
+
+.precios {
+    font-size: 18px;
+}
+
+.descuentos {
+    font-size: 16px;
+}
+
+.info-producto {
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    background:white;
+    display: none;
+    margin: auto;
+}
+
+
+
+.fa-truck {
+    padding: 5px;
+    border: solid 1px green;
+    border-radius: 100%;
+    color: green;
+}
+
+
+.fa-bars {
+    padding: 5px;
+}
+
+.icono-beneficios{
+    color: #1259c3;
+}
+
+
+#logo, #barra-busqueda {
+    width: 50%;
+}
+
+#barra-busqueda input {
+    width: 60%;
+    max-width: 200px;
+}
+
+#top-header {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#burger-menu {
+    background-color: #1259c3;
+    color: #ebebeb;
+    width: 3em;
+    height: 3em;
+    margin: auto;
+    border-radius: 20%;
+    text-align: center;
+}
+#mensaje-tarjeta, #beneficios, .burger-menu{
+    text-align: center;
+}
+
+#site, #login-navbar {
+    display: none;
+}
+
+@media (min-width: 361px) {
+    main section {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    main section article {
+        padding: 10px 10px;
+        width: 50%;
+    }
+
+    .info-producto {
+        display: block;
+        box-shadow: 0px 0px 10px rgb(100,100,100);
+    }
+    .precio-y-descuento {
+        display: flex;
+        align-items: center;
+        padding: 0 10px;
+    }
+
+    .precios {
+        flex-grow: 0.3;
+    }
+
+    .descuentos {
+        flex-grow: 0.70;
+    }
+
+    #site, #login-navbar {
+        display: block;
+    }
+
+    #burger-menu {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    main section article {
+        padding: 10px 10px;
+        width: 25%;
+    }
+
+    #top-header {
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+    }
+
+    #logo, #barra-busqueda {
+        width: 30%;
+    }
+
+
+}
