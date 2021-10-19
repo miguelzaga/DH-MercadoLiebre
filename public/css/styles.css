@@ -14,6 +14,7 @@ main {
     width: 100%;
     margin: auto;
     background-color: #ebebeb;
+    margin-top: 240px;
 }
 
 section {
@@ -65,6 +66,13 @@ form div.field {
 form div.field-button{
     display: flex;
     flex-direction: column;
+}
+
+.main-header{
+    background-color: #EAC926;
+    padding: 20px;
+    position: fixed;
+    top: 0;
 }
 
 .action-button {
