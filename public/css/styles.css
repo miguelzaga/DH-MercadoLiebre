@@ -35,6 +35,10 @@ i {
     margin-bottom: 10px;
 }
 
+li {
+    padding: 0 10px;
+}
+
 footer {
     width: 90%;
     margin: auto;
@@ -183,12 +187,23 @@ main section article i {
         flex-grow: 0.70;
     }
 
-    #site, #login-navbar {
-        display: block;
+    .left-navbar, .right-navbar {
+        display: flex;
+        align-items: center;
     }
 
+    
+    #site {
+        display: flex;
+        justify-content: space-between;
+    }
+    
     #burger-menu {
         display: none;
+    }
+
+    .left-navbar, .right-navbar {
+        list-style: none;
     }
 }
 
