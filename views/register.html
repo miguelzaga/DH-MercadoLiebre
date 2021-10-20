@@ -17,10 +17,10 @@
     <header class="main-header">
         <div id="top-header">
             <img id="logo" src="./images/logo-mercado-liebre.svg" alt="">
-            <div id="barra-busqueda" class="form" action='#' method="GET">
-                <input type="text" placeholder="Buscador">
-                <button><i class="fa fa-search"></i></button>
-            </div>
+            <form id="barra-busqueda" class="form" action='#' method="GET">
+                <input type="search" class="input-busqueda" placeholder="Buscar productos">
+                <button type="button"><i class="fa fa-search"></i></button>
+            </form>
 
             <p id="mensaje-tarjeta">
                 <i class="fas fa-hand-holding-usd"></i>
@@ -52,10 +52,12 @@
             <i class="fas fa-bars"></i>
         </div>
 
+
     </header>
 
 
     <main>
+        <img src="./images/img-home-banner.jpg">
         <form action="" method="get">
             <div class="field">
                 <label>Nombre y Apellido</label>
@@ -120,36 +122,38 @@
                 <input type="password">
             </div>
             <button class="action-button" type="submit">
-                <!--<a href="/">-->Registrarse<!--</a>-->
+                <!--<a href="/">-->Registrarse
+                <!--</a>-->
             </button>
             <button class="action-button" type="reset">Borrar datos</button>
         </form>
     </main>
 
     <footer>
-        <section id="beneficios">
-            <div class="icono-beneficios"><i class="far fa-credit-card"></i></div>
-            <h4>Pagá con tarjeta o en efectivo</h4>
-            <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
-                puntos de pago. ¡Y siempre es seguro!</p>
-        </section>
+        <section class="top-footer">
+            <section class="beneficios">
+                <div class="icono-beneficios"><i class="far fa-credit-card"></i></div>
+                <h4>Pagá con tarjeta o en efectivo</h4>
+                <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
+                    puntos de pago. ¡Y siempre es seguro!</p>
+            </section>
 
-        <section id="beneficios">
-            <div class="icono-beneficios"><i class="fas fa-gift"></i></div>
-            <h4>Envío gratis desde $2.500</h4>
-            <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
-                productos. Es un beneficio de Mercado Puntos.</p>
-        </section>
+            <section class="beneficios">
+                <div class="icono-beneficios"><i class="fas fa-gift"></i></div>
+                <h4>Envío gratis desde $2.500</h4>
+                <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+                    productos. Es un beneficio de Mercado Puntos.</p>
+            </section>
 
-        <section id="beneficios">
-            <div class="icono-beneficios"><i class="fas fa-user-shield"></i></div>
-            <h4>Seguridad, de principio a fin</h4>
-            <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
-                porque estás siempre protegid@.
-            </p>
+            <section class="beneficios">
+                <div class="icono-beneficios"><i class="fas fa-user-shield"></i></div>
+                <h4>Seguridad, de principio a fin</h4>
+                <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+                    porque estás siempre protegid@.
+                </p>
+            </section>
         </section>
-
-        <section>
+        <section id="copyright">
             <p>Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
         </section>
 
