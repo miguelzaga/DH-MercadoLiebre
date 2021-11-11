@@ -33,7 +33,7 @@ https://fontawesome.com/icons?d=gallery&m=free
 }
 
 body {
-    background-color: #EAC926;
+    background-color: #ebebeb;
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
 }
@@ -43,6 +43,7 @@ img {
 }
 
 h2 {
+    margin: 20px 0;
     font-size: 24px;
     text-align: center;
     color: #666;
@@ -82,10 +83,21 @@ li {
     display: none;
 }
 
+#site a {
+    text-decoration: none;
+    color: black;
+}
+
+#site a:hover {
+    color: #1259c3;
+}
+
 #barra-busqueda {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: stretch;
+
 }
 
 #logo, #barra-busqueda {
@@ -93,8 +105,23 @@ li {
 }
 
 #barra-busqueda input {
+    border: solid 1px #ebebeb;
+    display: block;
     width: 100%;
-    max-width: 200px;
+    padding: 7px 35px 7px 7px;
+    height: 40px;
+}
+
+#barra-busqueda button {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 0.8em;
+    height: 60%px;
+    background-color: #fff;
+    border-left: solid 1px #666;
+    color: #666;
+    border: none;
 }
 
 #burger-menu {
@@ -107,13 +134,18 @@ li {
     text-align: center;
 }
 
+#img-banner {
+    margin-top: 190px;
+    margin-bottom: 20px;
+}
+
 /** Main **/
 
 main {
     width: 90%;
     margin: auto;
     background-color: #ebebeb;
-    margin-top: 240px;
+    margin-top: 20px;
 }
 
 section {
@@ -122,14 +154,22 @@ section {
 }
 
 section article {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     margin: auto;
     margin: 10px 0;
+    transition: 450ms;
+}
+
+section article:hover{
+    padding: 0;
+    box-shadow: 0px 0px 5px rgb(100, 100, 100);
 }
 
 /* Home */
 
-main section article div{
+main section article div {
     position: relative;
 }
 
@@ -153,17 +193,26 @@ main section article i {
 
 .descuentos {
     font-size: 16px;
+    color:#39b54a;
 }
 
 .descripcion {
+    color: #666;
     display: none;
+    margin-top: 15px;
+}
+
+section article:hover .descripcion {
+    display: block;
 }
 
 .info-producto {
-    border-top: 1px solid #ebebeb;
-    padding: 15px;
     background: white;
+    border-top: 1px solid #ebebeb;
+    width: 100%;
+    padding: 15px;
     margin: auto;
+    margin-top: 0;
     transition: all 450ms;
 }
 
@@ -246,30 +295,40 @@ footer {
 .top-footer {
     display: flex;
     flex-direction: column;
-    padding: 20px 0;
+    padding: 20px;
+    margin-top: 80px;
+}
+
+#copyright {
+    border-top: #ebebeb 1px solid;
+    padding: 20px;
 }
 
 /** Media Queries **/
 
-@media (min-width: 361px) {
+@media (min-width: 426px) {
+    .main-header {
+        min-height: 230px;
+    }
+    #img-banner {
+        margin-top: 230px;
+    }
     main section {
         display: flex;
         flex-wrap: wrap;
     }
     main section article {
-        padding: 10px 10px;
+        padding: 0px 5px;
         width: 50%;
-        box-shadow: 0px 0px 1px rgb(100, 100, 100);
     }
-
     .info-producto {
         display: block;
     }
-
     .precio-y-descuento {
         display: flex;
+        justify-content: space-between;
         align-items: center;
-        padding: 0 10px;
+        padding: 10px 10px;
     }
     .precios {
         flex-grow: 0.3;
@@ -277,9 +336,7 @@ footer {
     .descuentos {
         flex-grow: 0.70;
     }
-    .descripcion {
-        display: inline;
-    }
+
     .left-navbar, .right-navbar {
         display: flex;
         align-items: center;
@@ -296,7 +353,13 @@ footer {
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
+    .main-header {
+        min-height: 154px;
+    }
+    #img-banner {
+        margin-top: 154px;
+    }
     main section article {
         padding: 10px 10px;
         width: 25%;
